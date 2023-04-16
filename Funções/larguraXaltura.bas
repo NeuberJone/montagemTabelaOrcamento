@@ -12,11 +12,14 @@ Sub larguraXaltura()
 
         Set ws = ThisWorkbook.Sheets("Especificações") ' Define a planilha Planilha de Testes como objeto de planilha
         
-        tamanhoAltura = ws.Range("N10")
-        tamanhoProfundidade = ws.Range("M10")
+        tamanhoAltura = ws.Range("N10").Value
+        ws.Range("N10").Value = Empty
+        
+        tamanhoProfundidade = ws.Range("M10").Value
+        ws.Range("N10").Value = Empty
 
         Set rng = ws.Range("L9")
-        rng.Value = "Largura"         ' Define o intervalo de células a serem mescladas como objeto de intervalo e coloca o texto Largura
+        rng.Value = "Largura"                       ' Define o intervalo de células a serem mescladas como objeto de intervalo e coloca o texto Largura
         With rng                                    ' Formatação do texto na célula atualmente selecionada
             .HorizontalAlignment = xlCenter         ' Centraliza o texto horizontalmente
             .VerticalAlignment = xlCenter           ' Centraliza o texto verticalmente

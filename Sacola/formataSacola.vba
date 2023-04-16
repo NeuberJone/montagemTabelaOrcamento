@@ -201,7 +201,7 @@ Sub formataSacola()
         .Font.Size = 11                         ' Define o tamanho do corpo como 20
         .Borders.LineStyle = xlContinuous       ' Aplica uma borda contínua
         .Borders.Weight = xlThin                ' Define a espessura da borda como fina
-        '.Interior.Color = RGB(217, 217, 217)    ' Define o preenchimento com a cor #D9D9D9 (Cinza)
+        .Interior.Color = xlNone
     End With
 
     Set rng = ws.Range("O12")                 ' Define o intervalo de células a serem mescladas como objeto de intervalo
@@ -213,7 +213,7 @@ Sub formataSacola()
         .Font.Size = 11                         ' Define o tamanho do corpo como 20
         .Borders.LineStyle = xlContinuous       ' Aplica uma borda contínua
         .Borders.Weight = xlThin                ' Define a espessura da borda como fina
-        '.Interior.Color = RGB(217, 217, 217)    ' Define o preenchimento com a cor #D9D9D9 (Cinza)
+        .Interior.Color = xlNone
     End With
 
     Set rng = ws.Range("L14")                 ' Define o intervalo de células a serem mescladas como objeto de intervalo
