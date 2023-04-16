@@ -6,11 +6,13 @@ Sub larguraXaltura()
     Dim ws As Worksheet
     Dim rng As Range
 
-    If larguraXalturaStatus = False Then
+    Set ws = ThisWorkbook.Sheets("Especificações") ' Define a planilha Planilha de Testes como objeto de planilha
+
+    Set rng = ws.Range("O9")
+
+    If larguraXalturaStatus = False Or rng.Value = Empty Then
 
         'desbloqueiaM9eM10
-
-        Set ws = ThisWorkbook.Sheets("Especificações") ' Define a planilha Planilha de Testes como objeto de planilha
         
         tamanhoAltura = ws.Range("N10").Value
         ws.Range("N10").Value = Empty
@@ -126,6 +128,7 @@ Sub larguraXaltura()
 
         Range("S8").FormulaR1C1 = Empty
         
+        larguraXprofundidadeXaltura = False
         larguraXalturaStatus = True
 
         Range("L10").Select

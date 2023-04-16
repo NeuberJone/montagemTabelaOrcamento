@@ -32,6 +32,22 @@ Sub adicionaValidacaoDadosManual()
         .ShowError = True
     End With
 
+    Range("N12").Select
+    With Selection.Validation
+        .Delete
+        .Add Type:=xlValidateList, AlertStyle:=xlValidAlertStop, Operator:= _
+        xlBetween, Formula1:= _
+        "Selecione,Preto,Pantone,Manual"
+        .IgnoreBlank = True
+        .InCellDropdown = True
+        .InputTitle = ""
+        .ErrorTitle = ""
+        .InputMessage = ""
+        .ErrorMessage = ""
+        .ShowInput = True
+        .ShowError = True
+    End With
+
     Application.ScreenUpdating = True
     Range("L5:O5").Select
     

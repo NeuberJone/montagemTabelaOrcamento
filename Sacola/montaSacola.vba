@@ -18,5 +18,7 @@ Sub montaSacola()
     adicionaFormulasSacola
     adicionaValidacaoDadosSacola
 
+    larguraXalturaStatus = False
+
     Application.ScreenUpdating = True
 End Sub
