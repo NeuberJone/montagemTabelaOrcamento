@@ -1,5 +1,0 @@
-manualStatus As Boolean
-sacolaStatus As Boolean
-informacaoClienteStatus As Boolean
-larguraXaltura As Boolean
-larguraXprofundidadeXaltura As Boolean
