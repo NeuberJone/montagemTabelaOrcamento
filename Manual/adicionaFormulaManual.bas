@@ -7,7 +7,7 @@ Sub adicionaFormulaManual()
     Set ws = ThisWorkbook.Sheets("Especificações")
 
     Range("M7:O7").Select
-    ActiveCell.FormulaR1C1 = "=Dados!R11C4"
+    ActiveCell.FormulaR1C1 = "=Dados!R35C54"
     
     Range("O10").Select
     ActiveCell.FormulaR1C1 = _
